@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import { Target, Heart, Users, Award, Clock, CheckCircle, BookOpen, GraduationCap, Handshake } from "lucide-react";
+import { Target, Heart, Users, Award, Clock, CheckCircle, BookOpen, GraduationCap, Handshake, Shield } from "lucide-react";
 import Layout from "@/components/Layout";
 import SectionHeader from "@/components/SectionHeader";
 import heroImage from "@/assets/hero-sports.jpg";
@@ -14,10 +14,10 @@ const fadeInUp = {
 
 const About = () => {
   const values = [
-    { icon: BookOpen, title: "Child Development", desc: "Focusing on holistic growth through age-appropriate physical education" },
-    { icon: GraduationCap, title: "Quality Education", desc: "Delivering best-in-class PE programs that enhance student learning and fitness" },
-    { icon: Handshake, title: "School Partnership", desc: "Collaborating with schools to implement comprehensive sports education" },
-    { icon: Award, title: "Excellence", desc: "Maintaining high standards in curriculum, training, and program delivery" },
+    { icon: Award, title: "Performance Excellence", desc: "We act responsibly and always seek to meet or exceed expectations" },
+    { icon: Users, title: "Teamwork", desc: "We work as a team, committed to each other, and bound by trust and loyalty" },
+    { icon: Shield, title: "Integrity", desc: "We treat one another and all our stakeholders with dignity and respect" },
+    { icon: Heart, title: "Honesty", desc: "Honesty, ethical behavior, and integrity are fundamental characteristics of our business conduct" },
   ];
 
   const timeline = [
@@ -107,7 +107,7 @@ const About = () => {
           <SectionHeader
             badge="Our Values"
             title="What We Stand For"
-            subtitle="The core principles that guide everything we do at SportElite Academy"
+            subtitle="The strong foundation of Sports Educate Foundation that defines who we are and sets us apart"
           />
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
