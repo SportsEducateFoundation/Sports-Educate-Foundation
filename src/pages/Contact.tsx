@@ -132,15 +132,18 @@ const Contact = () => {
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                   <div>
                     <label className="block text-sm font-medium text-foreground mb-2">
-                      Phone Number
+                      Phone Number *
                     </label>
                     <input
                       type="tel"
+                      required
                       value={formData.phone}
-                      onChange={(e) =>
-                        setFormData({ ...formData, phone: e.target.value })
-                      }
+                      onChange={(e) => {
+                        const numericValue = e.target.value.replace(/\D/g, "");
+                        setFormData({ ...formData, phone: numericValue });
+                      }}
                       className="w-full px-4 py-3 rounded-xl border border-border bg-background text-foreground focus:outline-none focus:ring-2 focus:ring-primary/30 focus:border-primary transition-colors"
+                      // placeholder="Enter phone number"
                       placeholder="+1 (234) 567-890"
                     />
                   </div>
