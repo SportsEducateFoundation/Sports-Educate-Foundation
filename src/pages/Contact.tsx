@@ -49,10 +49,24 @@ const Contact = () => {
   };
 
   const contactInfo = [
-    { icon: MapPin, label: "Address", value: "A2 401, Provident Green Park, Muthusamy Colony Extension, Selvapuram, Coimbatore - 641026" },
     { icon: Phone, label: "Phone", value: "+91 63741 73855", href: "tel:+916374173855" },
     { icon: Mail, label: "Email", value: "Info.sportseducate@gmail.com", href: "mailto:Info.sportseducate@gmail.com" },
     { icon: Clock, label: "Hours", value: "Mon - Sat: 6:00 AM - 10:00 PM" },
+  ];
+
+  const addresses = [
+    {
+      type: "Head Office",
+      address: "6/32 East street M.Reddiapatti, Aruppukottai taluk, Virudhunagar district, Tamilnadu - 626118",
+      mapSrc: "https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d4680.7094845930405!2d78.20590775191523!3d9.422118947426176!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1s6%2F32%20East%20street%20M.Reddiapatti%20Aruppukottai%20taluk%20Virudhunagar%20district%20Tamilnadu%20626118!5e0!3m2!1sen!2sin!4v1768797043072!5m2!1sen!2sin",
+      mapTitle: "Sports Educate Foundation - Head Office, Virudhunagar",
+    },
+    {
+      type: "Branch Office",
+      address: "A2 401, Provident Green Park, Muthusamy Colony Extension, Selvapuram, Coimbatore - 641026",
+      mapSrc: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3916.7362930662603!2d76.93550807401995!3d10.98326645534652!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ba85943b3f84549%3A0xb5ac6cbaf7c008d5!2sProvident%20Green%20Park%20Apartments!5e0!3m2!1sen!2sin!4v1767067631114!5m2!1sen!2sin",
+      mapTitle: "Sports Educate Foundation - Branch Office, Coimbatore",
+    },
   ];
 
   return (
@@ -289,18 +303,60 @@ const Contact = () => {
         </div>
       </section>
 
-      {/* Map Section */}
-      <section className="h-[400px] bg-muted">
-        <iframe
-          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3916.7362930662603!2d76.93550807401995!3d10.98326645534652!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ba85943b3f84549%3A0xb5ac6cbaf7c008d5!2sProvident%20Green%20Park%20Apartments!5e0!3m2!1sen!2sin!4v1767067631114!5m2!1sen!2sin"
-          width="100%"
-          height="100%"
-          style={{ border: 0 }}
-          allowFullScreen
-          loading="lazy"
-          referrerPolicy="no-referrer-when-downgrade"
-          title="Sports Educate Location - Provident Green Park, Coimbatore"
-        />
+      {/* Maps Section */}
+      <section className="section-padding bg-muted">
+        <div className="container-wide">
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            className="text-center mb-12"
+          >
+            <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-4">
+              Find Us
+            </h2>
+            <p className="text-muted-foreground">
+              Visit us at our locations across Tamil Nadu
+            </p>
+          </motion.div>
+
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
+            {addresses.map((addr, i) => (
+              <motion.div
+                key={i}
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
+                transition={{ delay: i * 0.1 }}
+                className="bg-card rounded-2xl overflow-hidden shadow-sm"
+              >
+                <div className="p-6 border-b border-border">
+                  <div className="flex items-center gap-3 mb-2">
+                    <MapPin className="h-5 w-5 text-primary" />
+                    <h3 className="text-xl font-bold text-foreground">
+                      {addr.type}
+                    </h3>
+                  </div>
+                  <p className="text-muted-foreground text-sm leading-relaxed">
+                    {addr.address}
+                  </p>
+                </div>
+                <div className="h-[400px] w-full">
+                  <iframe
+                    src={addr.mapSrc}
+                    width="100%"
+                    height="100%"
+                    style={{ border: 0 }}
+                    allowFullScreen
+                    loading="lazy"
+                    referrerPolicy="no-referrer-when-downgrade"
+                    title={addr.mapTitle}
+                  />
+                </div>
+              </motion.div>
+            ))}
+          </div>
+        </div>
       </section>
     </Layout>
   );
