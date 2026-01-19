@@ -56,16 +56,16 @@ const Contact = () => {
 
   const addresses = [
     {
-      type: "Head Office",
-      address: "6/32 East street M.Reddiapatti, Aruppukottai taluk, Virudhunagar district, Tamilnadu - 626118",
-      mapSrc: "https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d4680.7094845930405!2d78.20590775191523!3d9.422118947426176!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1s6%2F32%20East%20street%20M.Reddiapatti%20Aruppukottai%20taluk%20Virudhunagar%20district%20Tamilnadu%20626118!5e0!3m2!1sen!2sin!4v1768797043072!5m2!1sen!2sin",
-      mapTitle: "Sports Educate Foundation - Head Office, Virudhunagar",
-    },
-    {
-      type: "Branch Office",
+      type: "Coimbatore Office",
       address: "A2 401, Provident Green Park, Muthusamy Colony Extension, Selvapuram, Coimbatore - 641026",
       mapSrc: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3916.7362930662603!2d76.93550807401995!3d10.98326645534652!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ba85943b3f84549%3A0xb5ac6cbaf7c008d5!2sProvident%20Green%20Park%20Apartments!5e0!3m2!1sen!2sin!4v1767067631114!5m2!1sen!2sin",
-      mapTitle: "Sports Educate Foundation - Branch Office, Coimbatore",
+      mapTitle: "Sports Educate Foundation - Coimbatore Office",
+    },
+    {
+      type: "Registered Office",
+      address: "6/32 East street M.Reddiapatti, Aruppukottai taluk, Virudhunagar district, Tamilnadu - 626118",
+      mapSrc: "https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d4680.7094845930405!2d78.20590775191523!3d9.422118947426176!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1s6%2F32%20East%20street%20M.Reddiapatti%20Aruppukottai%20taluk%20Virudhunagar%20district%20Tamilnadu%20626118!5e0!3m2!1sen!2sin!4v1768797043072!5m2!1sen!2sin",
+      mapTitle: "Sports Educate Foundation - Registered Office, Virudhunagar",
     },
   ];
 
