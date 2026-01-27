@@ -67,8 +67,15 @@ const Footer = () => {
               <li className="flex items-start gap-3">
                 <MapPin className="h-5 w-5 text-primary shrink-0 mt-0.5" />
                 <div className="text-background/70 text-sm">
-                  <div className="font-semibold text-primary mb-1">Head Office</div>
+                  <div className="font-semibold text-primary mb-1">Registered Office</div>
                   <div>6/32 East street M.Reddiapatti, Aruppukottai taluk, Virudhunagar district, Tamilnadu - 626118</div>
+                </div>
+              </li>
+              <li className="flex items-start gap-3">
+                <MapPin className="h-5 w-5 text-primary shrink-0 mt-0.5" />
+                <div className="text-background/70 text-sm">
+                  <div className="font-semibold text-primary mb-1">Coimbatore Office</div>
+                  <div>A2 401, Provident Green Park, Muthusamy Colony Extension, Selvapuram, Coimbatore - 641026</div>
                 </div>
               </li>
               <li className="flex items-center gap-3">
