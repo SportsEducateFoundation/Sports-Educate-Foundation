@@ -1,0 +1,29 @@
+{
+  "name": "Sports Educate Foundation",
+  "short_name": "Sports Educate",
+  "description": "Revolutionizing physical education in schools through evidence-based sports programs",
+  "icons": [
+    {
+      "src": "/logo.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "/logo.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any maskable"
+    }
+  ],
+  "start_url": "/",
+  "display": "standalone",
+  "theme_color": "#000000",
+  "background_color": "#ffffff",
+  "orientation": "portrait-primary",
+  "categories": ["education", "sports", "fitness", "children"],
+  "lang": "en",
+  "dir": "ltr",
+  "scope": "/",
+  "id": "sports-educate-foundation"
+}
