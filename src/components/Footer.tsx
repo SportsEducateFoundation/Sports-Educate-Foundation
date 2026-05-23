@@ -99,7 +99,7 @@ const Footer = () => {
       <div className="border-t border-background/10">
         <div className="container-wide py-6 flex flex-col md:flex-row justify-between items-center gap-4">
           <p className="text-background/50 text-sm">
-            © 2026 SportSpark Sports Foundation. All rights reserved.
+            © 2026 SportSpark Foundation. All rights reserved.
           </p>
           <a 
             href="https://www.linkedin.com/in/v-manikandan1142/" 
@@ -110,7 +110,7 @@ const Footer = () => {
             Crafted with <span className="text-primary group-hover:animate-pulse">♥</span> by{" "}
             <span className="font-semibold text-background/70 group-hover:text-primary transition-colors">
               Manikandan V
-            </span>
+            </span>//
           </a>
         </div>
       </div>
