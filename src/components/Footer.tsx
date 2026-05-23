@@ -11,8 +11,8 @@ const Footer = () => {
           {/* Brand */}
           <div className="space-y-6">
             <Link to="/" className="flex items-center gap-2">
-              <img src={logo} alt="Sports Educate" className="h-12 w-auto" />
-              <span className="text-xl font-bold tracking-tight">Sports Educate Foundation</span>
+              <img src={logo} alt="SportSpark" className="h-12 w-auto" />
+              <span className="text-xl font-bold tracking-tight">SportSpark Sports Foundation</span>
             </Link>
             <p className="text-background/70 text-sm leading-relaxed">
               Revolutionizing physical education in schools. Empowering children through 
@@ -99,7 +99,7 @@ const Footer = () => {
       <div className="border-t border-background/10">
         <div className="container-wide py-6 flex flex-col md:flex-row justify-between items-center gap-4">
           <p className="text-background/50 text-sm">
-            © 2026 Sports Educate Foundation. All rights reserved.
+            © 2026 SportSpark Sports Foundation. All rights reserved.
           </p>
           <a 
             href="https://www.linkedin.com/in/v-manikandan1142/" 
