@@ -110,7 +110,7 @@ const Footer = () => {
             Crafted with <span className="text-primary group-hover:animate-pulse">♥</span> by{" "}
             <span className="font-semibold text-background/70 group-hover:text-primary transition-colors">
               Manikandan V
-            </span>//
+            </span>
           </a>
         </div>
       </div>
